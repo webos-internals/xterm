@@ -19,4 +19,5 @@ $X_DIR/start.sh
 #Start xterm
 
 #This sizes the xterm, using default font, to more or less fill the screen.
-$APP_DIR/xterm -geometry 52x36+0+0
+#Start in home directory
+cd $HOME; $APP_DIR/xterm -geometry 52x36+0+0
