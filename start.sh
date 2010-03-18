@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -l
 #Launches the x server, with a particular app in it.
 
 #This is where the X server lives
