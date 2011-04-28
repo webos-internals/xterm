@@ -9,7 +9,7 @@ KEYMAP_DIR=$APP_DIR/share/X11/xkb/keymap
 export PATH=$APP_DIR/bin:$PATH
 
 #Portrait orientation
-Xsdl -noreset -nolisten tcp -retro -screen 320x480x24 $DISPLAY &
+forker `which Xsdl` -noreset -nolisten tcp -retro -screen 320x480x24 $DISPLAY
 #Landscape
 #Xsdl -noreset -nolisten tcp -retro -screen 480x320x24 $DISPLAY &
 
