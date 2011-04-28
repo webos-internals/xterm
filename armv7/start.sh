@@ -1,7 +1,7 @@
 #!/bin/sh
 #Launches the x server
 
-DISPLAY=:0.0
+export DISPLAY=:0.0
 
 APP_DIR=/media/cryptofs/apps/usr/palm/applications/org.webosinternals.xterm
 KEYMAP_DIR=$APP_DIR/share/X11/xkb/keymap
