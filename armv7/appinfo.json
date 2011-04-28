@@ -1,11 +1,11 @@
 {
     "title":        "xterm",
-    "id":           "org.webosinternals.xterm-launcher",
-    "type":         "game",
+    "id":           "org.webosinternals.xterm",
+    "type":         "pdk",
     "main":         "start.sh",
     "vendor":       "WebOS Internals",
     "vendor_email": "support@webos-internals.org",
     "vendor_url":   "http://www.webos-internals.org/wiki/Application:X",
-    "version":      "0.2.0",
+    "version":      "0.3.0",
     "icon":         "icon.png"
 }
