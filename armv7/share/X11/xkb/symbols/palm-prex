@@ -1,0 +1,105 @@
+default partial alphanumeric_keys
+xkb_symbols "us" {
+
+    name[Group1]= "Palm Pre Keyboard";
+
+    //                     ORNG       SYM        SHIFT+SIM
+
+    // Alphanumeric section - top row
+    key <AD01> { [   q, Q, slash ], [ backslash, bar ] };
+    key <AD02> { [   w, W, plus ]};
+    key <AD03> { [   e, E, 1 ], [ Home ] };
+    key <AD04> { [   r, R, 2 ], [ Up ] };
+    key <AD05> { [   t, T, 3 ] };
+    key <AD06> { [   y, Y, parenleft ], [ bracketleft, braceleft ] };
+    key <AD07> { [   u, U, parenright ], [ bracketright, braceright ] };
+    key <AD08> { [   i, I, percent ], [ less ] };
+    key <AD09> { [   o, O, quotedbl ], [ greater ] };
+    key <AD10> { [   p, P, equal ], [ bar ] };
+
+    // Alphanumeric section - 2nd row
+    key <AC01> { [   a, A, ampersand ] };
+    key <AC02> { [   s, S, minus ], [ asciitilde, grave ] };
+    key <AC03> { [   d, D, 4 ], [ Left ] };
+    key <AC04> { [   f, F, 5 ] };
+    key <AC05> { [   g, G, 6 ], [ Right ] };
+    key <AC06> { [   h, H, dollar ], [ braceleft, braceright ] };
+    key <AC07> { [   j, J, exclam ] };
+    key <AC08> { [   k, K, colon ], [ semicolon ] };
+    key <AC09> { [   l, L, quoteright ], [ quoteleft ] };
+    key <BKSP> { [ BackSpace   ] };
+
+    // Alphanumeric section - 3rd row
+    key <AB01> { [   z, Z, asterisk ] };
+    key <AB02> { [   x, X, 7 ], [ End ] };
+    key <AB03> { [   c, C, 8 ], [ Down ] };
+    key <AB04> { [   v, V, 9 ] };
+    key <AB05> { [   b, B, numbersign ] };
+    key <AB06> { [   n, N, question ] };
+    key <AB07> { [   m, M, semicolon ] };
+    key <AB08> { [ comma, comma, underscore ] };
+    key <RTRN> { [ Return ] };
+
+    // Alphanumeric section - bottom row
+    key <LFSH> { [ Shift_L ] };
+    key <AT> { [ at, at, 0 ] };
+    key <SPCE> { [ space, Escape ], [ Tab ] };
+    key <RCTL> { [ Control_R ] };
+    key <PRD> { [ period, U007C, U003E, U003C ] };
+    // End alphanumeric section
+
+    modifier_map Shift  { Shift_L };
+    modifier_map Control{ Control_R };
+
+    //Sym Key
+    key <RALT>	{ 	
+	symbols[Group1]= [ Mode_switch, Multi_key ],
+	virtualMods= AltGr
+    };
+
+    //Orange Key
+    key <ORNG> {
+        type[Group1]="ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level3_Shift ]
+    };
+    modifier_map Mod5   { ISO_Level3_Shift };
+
+
+    //Orange bindings:
+
+    //Orange keys, row 1
+    key <OA01> { [ slash ] };
+    key <OA02> { [ plus ] };
+    key <OA03> { [ 1 ] };
+    key <OA04> { [ 2 ] };
+    key <OA05> { [ 3 ] };
+    key <OA06> { [ parenleft ] };
+    key <OA07> { [ parenright ] };
+    key <OA08> { [ percent ] };
+    key <OA09> { [ quotedbl ] };
+    key <OA10> { [ equal ] };
+
+    //Orange keys, row 2
+    key <OB01> { [ ampersand ] };
+    key <OB02> { [ minus ] };
+    key <OB03> { [ 4 ] };
+    key <OB04> { [ 5 ] };
+    key <OB05> { [ 6 ] };
+    key <OB06> { [ dollar ] };
+    key <OB07> { [ exclam ] };
+    key <OB08> { [ colon ] };
+    key <OB09> { [ quoteright ] };
+
+    //Orange keys, row 3
+    key <OC01> { [ asterisk ] };
+    key <OC02> { [ 7 ] };
+    key <OC03> { [ 8 ] };
+    key <OC04> { [ 9 ] };
+    key <OC05> { [ numbersign ] };
+    key <OC06> { [ question ] };
+    key <OC07> { [ semicolon ] };
+    key <OC08> { [ underscore ] };
+
+    //Orange, row 4 (@)
+    key <OD01> { [ 0 ] };
+};
