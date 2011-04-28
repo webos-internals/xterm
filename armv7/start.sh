@@ -6,7 +6,7 @@
 #(invoke like: 'DISPLAY=:0.0 /path/to/this/file/start.sh')
 
 #This is where the X server lives
-APP_DIR=/media/cryptofs/apps/usr/palm/applications/org.webosinternals.xserver
+APP_DIR=/media/cryptofs/apps/usr/palm/applications/org.webosinternals.xterm
 KEYMAP_DIR=$APP_DIR/share/X11/xkb/keymap
 
 export PATH=$APP_DIR/bin:$PATH
@@ -24,4 +24,4 @@ xkbcomp -R$KEYMAP_DIR palm-pre $DISPLAY
 #Start xterm
 
 #This sizes the xterm, using default font, to more or less fill the screen.
-$APP_DIR/xterm -geometry 52x36+0+0 -e "login -f root"
+$APP_DIR/bin/xterm -geometry 52x36+0+0 -e "login -f root"
