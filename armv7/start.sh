@@ -1,15 +1,13 @@
 #!/bin/sh
 #Launches the x server
 
-#This script should be called from anything that wants/needs an X server
-#Assumes 'DISPLAY' variable is /set/ to what we should launch the server on
-#(invoke like: 'DISPLAY=:0.0 /path/to/this/file/start.sh')
+DISPLAY=:0.0
 
-#This is where the X server lives
 APP_DIR=/media/cryptofs/apps/usr/palm/applications/org.webosinternals.xterm
 KEYMAP_DIR=$APP_DIR/share/X11/xkb/keymap
 
 export PATH=$APP_DIR/bin:$PATH
+
 #Portrait orientation
 Xsdl -noreset -nolisten tcp -retro -screen 320x480x24 $DISPLAY &
 #Landscape
@@ -24,4 +22,4 @@ xkbcomp -R$KEYMAP_DIR palm-pre $DISPLAY
 #Start xterm
 
 #This sizes the xterm, using default font, to more or less fill the screen.
-$APP_DIR/bin/xterm -geometry 52x36+0+0 -e "login -f root"
+xterm -geometry 52x36+0+0 -e "login -f root"
