@@ -16,7 +16,6 @@ forker `which Xsdl` -noreset -nolisten tcp -retro -screen 320x480x24 $DISPLAY
 sleep 1
 xkbcomp -R$KEYMAP_DIR palm-prex $DISPLAY
 
-sleep 1
 xkbset exp 60 =sticky =twokey =latchlock
 xkbset sticky -twokey latchlock
 
