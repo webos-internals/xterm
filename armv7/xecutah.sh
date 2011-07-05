@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APP_DIR=`basename $0`
+APP_DIR=`dirname $0`
 
 export DISPLAY=:0.0
 
