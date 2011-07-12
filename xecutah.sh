@@ -7,4 +7,4 @@ export DISPLAY=:0.0
 export PATH=${APP_DIR}/bin:${PATH}
 
 # Run xterm maximized...
-${APP_DIR}/bin/xterm -maximize -e "login -f root" 2>&1 >& /tmp/xterm.log &
+${APP_DIR}/bin/xterm -maximize -e "login -f root" &> /tmp/xterm.log &
