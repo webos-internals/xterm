@@ -1,0 +1,61 @@
+[
+{
+    "category":"system",
+    "owner": "org.webosinternals.xterm",
+    "prefs": [ {
+        "group":"XTerm",
+        "restart":"app",
+        "label":"Foreground Color",
+        "help":"Set the color of the terminal's text",
+        "key":"fgColor",
+        "type":"ListSelector",
+        "value":"black",
+        "choices": [{
+            "label":"Black",
+            "value":"black"
+        },{
+            "label":"White",
+            "value":"white"
+        },{
+            "label":"Green",
+            "value":"green"
+        },{
+            "label":"Red",
+            "value":"red"
+        },{
+            "label":"Blue",
+            "value":"blue"
+        },{
+            "label":"Yellow",
+            "value":"yellow"
+        }]
+    },{
+        "group":"XTerm",
+        "restart":"app",
+        "label":"Background Color",
+        "help":"Set the color of the terminal's background",
+        "key":"bgColor",
+        "type":"ListSelector",
+        "value":"black",
+        "choices": [{
+            "label":"Black",
+            "value":"black"
+        },{
+            "label":"White",
+            "value":"white"
+        },{
+            "label":"Green",
+            "value":"green"
+        },{
+            "label":"Red",
+            "value":"red"
+        },{
+            "label":"Blue",
+            "value":"blue"
+        },{
+            "label":"Yellow",
+            "value":"yellow"
+        }]
+    }]
+}
+]
