@@ -8,8 +8,8 @@ export PATH=${APP_DIR}/bin:${PATH}
 
 RESPONSE=$(luna-send -f -n 1 palm://org.webosinternals.tweaks.prefs/get '{"owner":"org.webosinternals.xterm", "keys":["fgColor","bgColor"]}')
 
-export FG="-fg $(echo "$RESPONSE"| grep fgColor|cut -d\" -f4)"
-export BG="-bg $(echo "$RESPONSE"| grep bgColor|cut -d\" -f4)"
+export FG="-fg $(echo "$RESPONSE"| grep fgColor|cut -d\" -f4|tr -cd '[:alnum:] [:space:]')"
+export BG="-bg $(echo "$RESPONSE"| grep bgColor|cut -d\" -f4|tr -cd '[:alnum:] [:space:]')"
 
 # Run xterm maximized...
 if [ "$FG" == "-fg " ]; then
