@@ -9,7 +9,7 @@
         "help":"Set the color of the terminal's text",
         "key":"fgColor",
         "type":"ListSelector",
-        "value":"black",
+        "value":"green",
         "choices": [{
             "label":"Black",
             "value":"black"
