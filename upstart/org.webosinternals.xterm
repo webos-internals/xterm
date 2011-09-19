@@ -1,6 +1,8 @@
 description "XTerm"
 
-env DISPLAY=:0.0
-export DISPLAY
+start on org.webosinternals.xterm
 
-exec /media/cryptofs/apps/usr/palm/applications/org.webosinternals.xterm/xecutah.sh
+script
+	/sbin/initctl emit org.webosinternals.xserver "$@"
+	exec /media/cryptofs/apps/usr/palm/applications/org.webosinternals.xterm/xecutah.sh "$@"
+end script
