@@ -8,5 +8,5 @@ export PATH=${APP_DIR}/bin:${PATH}
 
 . ${APP_DIR}/get_colors.inc
 
-${APP_DIR}/bin/xterm -display ${DISPLAY} -maximize $FG $BG -e "login -p -f root" &> /tmp/xterm.log &
+${APP_DIR}/bin/xterm -display ${DISPLAY} -maximize $FG $BG -xrm "*metaSendsEscape: true" -e "login -p -f root" &> /tmp/xterm.log &
 
